@@ -1,8 +1,6 @@
 ---
 title: "Perfect For Fashion"
 date: 2020-09-01T11:07:10+06:00
-image: "images/blog/blog-1.jpg"
-image_webp: "images/blog/blog-1.webp"
 description: "this is meta description"
 categories: ["photography"]
 draft: false
