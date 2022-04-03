@@ -1,14 +1,27 @@
 {{ define "main" }}
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h1>Page Not Found!</h1>
-        <a href="{{site.BaseURL}}" class="btn btn-primary">Back To Home</a>
-      </div>
+<section class="section" xmlns="http://www.w3.org/1999/html">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+              <img src="/images/404.jpg" alt="Support Organizations">
+                <h2 style="font-size: 78px">404</h2>
+                <p>The requested page could not be found.</p>
+                <p>Since you are here think of supporting one of the following organizations: </p>
+                <ul>
+                    <li><a href="https://www.wild-anima.gr/en/donations/direct-donation-2/"><b>ANIMA</b> for Life and
+                        Freedom</a></li>
+                    <li><a href="https://www.ippothesis.gr/contact-us?lang=en"><b>IPPOTHESIS</b>, Panhellenic Equine
+                        Welfare Society</a></li>
+                    <li><a href="https://archipelago.gr/en/get-involved/donate/"><b>ARCHIPELAGOS</b>, Institute of
+                        Marine Conservation</a></li>
+                    <li><a href="https://www.alittleshelter.gr/"><b>A Little Shelter</b>, Adopt don't Shop </a></li>
+                </ul>
+                </br>
+                <p><a href="{{site.BaseURL}}" class="btn btn-primary">Back to Home</a></p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 {{ end }}

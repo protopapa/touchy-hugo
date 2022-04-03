@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/touchy/examplesite/"
+baseURL = "/"
 title = "Touchy Hugo | Minimal Blog Theme"
 theme = "touchy-hugo"
 # post pagination
@@ -34,10 +34,6 @@ attributes = "defer"
 [[params.plugins.js]]
 link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"
 attributes = "defer"
-
-[[params.plugins.js]]
-link = "plugins/turbolinks/turbolinks.js"
-attributes = "data-turbolinks-suppress-warning defer"
 
 ###################### Navigation ###########################
 

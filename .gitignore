@@ -8,3 +8,7 @@ node_modules
 builds
 package-lock.json
 public
+.idea
+*.iml
+exampleSite/resources
+exampleSite/.hugo_build.lock
