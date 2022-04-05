@@ -3,17 +3,17 @@
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 
-<!--{{ if eq .Section "categories"}}-->
-<!--<section class="section-sm pb-0">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-12 text-center">-->
-<!--        <h1> Post {{ .Title }}</h1>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--{{end}}-->
+{{ if eq .Section "categories"}}
+<section class="section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1> Content {{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
 
 <section class="section">
   <div class="container">
