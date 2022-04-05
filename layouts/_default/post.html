@@ -3,7 +3,7 @@
         {{ range .Params.categories }}
         <a class="post-meta" href="{{`categories/` | absURL}}{{. | lower | urlize}}/">{{.| humanize}}</a>
         {{ end }}
-        <h3 class="my-3"><a class="post-title" href="{{.Permalink}}">{{.Title}}</a></h3>
+        <h1 class="my-3"><a class="post-title" href="{{.Permalink}}">{{.Title}}</a></h1>
         <span class="post-date">{{.PublishDate.Format "02 Jan, 2006"}}</span>
     </div>
     {{ if .Params.image }}
