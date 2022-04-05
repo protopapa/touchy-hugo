@@ -17,7 +17,7 @@
                         <span class="post-date">{{.PublishDate.Format "02 Jan, 2006"}}</span>
                     </div>
                     {{ if .Params.image }}
-                    <img loading="lazy" class="img-fluid" src="{{ .Params.image_webp | absURL }}">
+                    <img loading="lazy" class="img-fluid" src="{{ .Params.image | absURL }}">
                     {{ end }}
                     <div class="card-body px-0">
                         <div class="content text-left">
