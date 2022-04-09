@@ -186,5 +186,9 @@ a.post-title:hover {
     padding: 10px 20px;
     background: $light;
     overflow-x: auto;
+
+    code {
+      margin-bottom: 0.9px;
+    }
   }
 }
