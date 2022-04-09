@@ -37,9 +37,10 @@ a.post-title:hover {
   color: $primary-color;
 }
 
-.social-icons a{
+.social-icons a {
   color: $text-color-light;
-  &:hover{
+
+  &:hover {
     color: $primary-color;
   }
 }
@@ -49,8 +50,10 @@ a.post-title:hover {
   justify-content: center;
   display: flex;
   padding-left: 0;
+
   .page-item {
     list-style-type: none;
+
     .page-link {
       display: inline-block;
       width: 40px;
@@ -62,6 +65,7 @@ a.post-title:hover {
       margin-right: 6px;
       font-weight: 600;
       color: $primary-color;
+
       &:hover {
         background: $primary-color;
         color: $white;
@@ -107,6 +111,7 @@ a.post-title:hover {
 
   ol {
     padding-left: 20px;
+    list-style-type: decimal;
   }
 
   ul {
@@ -178,7 +183,7 @@ a.post-title:hover {
   }
 
   pre {
-    padding: 10px 20px;
+    padding: 10px 10px 0.9px;
     background: $light;
     overflow-x: auto;
   }

@@ -16,6 +16,9 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
 [outputs]
 home = ["HTML", "RSS"]
 
+[markup]
+[markup.highlight]
+noClasses = false
 [markup.goldmark.renderer]
 unsafe = true
 
