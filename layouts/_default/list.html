@@ -19,7 +19,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        {{ $paginator:= .Paginate .Data.Pages }}
+	
+	{{ $pages := where site.RegularPages "Type" "posts" }}
+	{{ $paginator := .Paginate $pages.ByDate }}
+
         {{ range $paginator.Pages }}
         {{ .Render "post" }}
         {{ end }}
