@@ -8,30 +8,30 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1> Content {{ .Title }}</h1>
+        <h1> {{ .Title }}</h1>
       </div>
     </div>
   </div>
 </section>
 {{end}}
 
-{{/*<section class="section">*/}}
-{{/*  <div class="container">*/}}
-{{/*    <div class="row">*/}}
-{{/*      <div class="col-lg-8 mx-auto">*/}}
-{{/*	*/}}
-{{/*	{{ $pages := where site.RegularPages "Type" "posts" }}*/}}
-{{/*	{{ $paginator := .Paginate $pages.ByDate }}*/}}
-{{/**/}}
-{{/*        {{ range $paginator.Pages }}*/}}
-{{/*        {{ .Render "summary" }}*/}}
-{{/*        {{ end }}*/}}
-{{/**/}}
-{{/*        {{ template "_internal/pagination.html" . }}*/}}
-{{/*      </div>*/}}
-{{/*    </div>*/}}
-{{/*  </div>*/}}
-{{/*</section>*/}}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+	{{ $pages := where site.RegularPages "Type" "posts" }}
+	{{ $paginator := .Paginate $pages.ByDate }}
+
+        {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+        {{ end }}
+
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- regular page -->
 {{ else }}
