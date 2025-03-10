@@ -6,11 +6,11 @@
         <h1 class="my-3"><a class="post-title" href="{{.Permalink}}">{{.Title}}</a></h1>
         <span class="post-date">{{.PublishDate.Format "02 Jan, 2006"}}</span>
     </div>
-{{/*    {{ if .Params.image }}*/}}
-{{/*    <a href="{{.Permalink}}"><img loading="lazy" class="img-fluid" src="{{ .Params.image | absURL }}"></a>*/}}
-{{/*    {{ end }}*/}}
-{{/*    <div class="card-body px-0">*/}}
-{{/*        <p class="card-text mb-4 text-left">{{ .Summary }}...</p>*/}}
-{{/*        <a href="{{.Permalink}}" class="btn btn-outline-primary mb-4">Continue Reading</a>*/}}
-{{/*    </div>*/}}
+    {{ if .Params.image }}
+    <a href="{{.Permalink}}"><img loading="lazy" class="img-fluid" src="{{ .Params.image | absURL }}"></a>
+    {{ end }}
+    <div class="card-body px-0">
+        <p class="card-text mb-4 text-left">{{ .Summary }}...</p>
+        <a href="{{.Permalink}}" class="btn btn-outline-primary mb-4">Continue Reading</a>
+    </div>
 </article>
