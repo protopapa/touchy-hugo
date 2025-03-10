@@ -4,11 +4,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        {{ range where .Site.RegularPages "Section" "in" .Site.MainSections }}
-        {{ .Render "post" }}
+        {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{ $paginator:= .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections )}}
+        {{ range (.Paginate $pages 4).Pages }}
+        {{ .Render "summary" }}
         {{ end }}
 
         {{ template "_internal/pagination.html" . }}
+
       </div>
     </div>
   </div>
