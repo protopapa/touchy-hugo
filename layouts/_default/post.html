@@ -10,7 +10,8 @@
     <a href="{{.Permalink}}"><img loading="lazy" class="img-fluid" src="{{ .Params.image | absURL }}"></a>
     {{ end }}
     <div class="card-body px-0">
-        <p class="card-text mb-4 text-left">{{ .Summary }}...</p>
+        {{ $summary := index (split .Content "</p>") 0 }}
+        <p class="card-text mb-4 text-left">{{ $summary }}</p>
         <a href="{{.Permalink}}" class="btn btn-outline-primary mb-4">Continue Reading</a>
     </div>
 </article>
